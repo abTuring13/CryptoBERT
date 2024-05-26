@@ -5,11 +5,10 @@ The study investigates the NLP CryptoBERT model, which is based on the BERT (Bid
 
 Key Components
 Data: The news headlines dataset contains over 10,700 annotated headlines with sentiment labels (positive, negative, neutral). The headlines are preprocessed to match the input requirements of the CryptoBERT model.
-
-News_headlines_tagged_uncleaned.csv: Original data containing true labels of news headlines.
+1. News_headlines_tagged_uncleaned.csv: Original data containing true labels of news headlines.
 Source: https://www.kaggle.com/datasets/ankurzing/aspect-based-sentiment-analysis-for-financial-news
-News_headlines_tagged.csv: Cleaned data with original labels.
-News_headlines_tagged_cryptobert.csv: Data containing predictions of the model.
+2. News_headlines_tagged.csv: Cleaned data with original labels.
+3. News_headlines_tagged_cryptobert.csv: Data containing predictions of the model.
 
 The project contains 3 .ipynb notebooks to be run in the following order:
 1. CleanData.ipynb– to be run first. Preprocesses the testing data. It outputs "News_headlines_tagged.csv".
