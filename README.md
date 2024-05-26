@@ -5,15 +5,14 @@ The study investigates the NLP CryptoBERT model, which is based on the BERT (Bid
 
 Key Components
 Data: The news headlines dataset contains over 10,700 annotated headlines with sentiment labels (positive, negative, neutral). The headlines are preprocessed to match the input requirements of the CryptoBERT model.
-1. News_headlines_tagged_uncleaned.csv: Original data containing true labels of news headlines.
-Source: https://www.kaggle.com/datasets/ankurzing/aspect-based-sentiment-analysis-for-financial-news
+1. News_headlines_tagged_uncleaned.csv: Original data containing true labels of news headlines. Source: https://www.kaggle.com/datasets/ankurzing/aspect-based-sentiment-analysis-for-financial-news
 2. News_headlines_tagged.csv: Cleaned data with original labels.
 3. News_headlines_tagged_cryptobert.csv: Data containing predictions of the model.
 
 The project contains 3 .ipynb notebooks to be run in the following order:
 1. CleanData.ipynb– to be run first. Preprocesses the testing data. It outputs "News_headlines_tagged.csv".
 2. CryptoBert.ipynb– to be run second. Produces forecasts from CryptoBERT. Input: "News_headlines_tagged.csv file.". It outputs: "News_headlines_tagged_cryptobert.csv"
-Source: #https://huggingface.co/ElKulako/cryptobert
+Source: https://huggingface.co/ElKulako/cryptobert
 3. NewsHeadlinesAnalysis.ipynb– to be run third. Analysis of the performance of the model. Input 1: "News_headlines_tagged.csv – cleaned data". Input 2: "News_headlines_tagged_cryptobert.csv"
 
 Model: The CryptoBERT model is based on the BERTweet language model, pre-trained on 850M English tweets and further fine-tuned with 2M cryptocurrency-related posts. The model classifies sentiment as bullish, bearish, or neutral, which are mapped to the positive, negative, and neutral labels of the news headlines.
